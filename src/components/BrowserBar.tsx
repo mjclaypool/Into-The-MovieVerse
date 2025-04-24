@@ -13,7 +13,7 @@ export default function BrowseBar(props: barProps) {
         const options = { method: "GET" };
         const fetchMovies = async () => {
             try {
-                const response = await fetch("http://127.0.0.1:5000/movies_list", options);
+                const response = await fetch("https://mjclaypool.pythonanywhere.com/movies_list", options);
                 if (!response.ok) {
                     throw new Error(`HTTP error status: ${response.status}`);
                 }
