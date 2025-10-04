@@ -16,7 +16,7 @@ export default function Modal() {
 
     return createPortal(
         <>
-            <dialog className="fixed flex items-center top-0 w-full h-full justify-center bg-zinc-950/70" open onClick={userProgressCtx.hideModal}>
+            <dialog className="fixed flex items-center top-0 w-full h-full justify-center bg-zinc-950/50" open onClick={userProgressCtx.hideModal}>
                 <div
                 className="relative w-full max-w-4xl mx-auto bg-zinc-200 rounded-lg p-6 md:p-12 grid grid-cols-1 md:[grid-template-columns:300px_1fr] gap-6 md:gap-12 max-h-[90vh] overflow-hidden"
                 onClick={e => e.stopPropagation()}
