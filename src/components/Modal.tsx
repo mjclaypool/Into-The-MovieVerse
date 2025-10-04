@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import { createPortal } from "react-dom"
 
 import Button from "../UI/Button"
-import testImg from "../assets/test-img-Inception.png"
+import testImg from "../assets/test-img-load.png"
 import UserProgressContext from "../store/UserProgressContext"
 
 
@@ -34,11 +34,7 @@ export default function Modal() {
                             <p className="text-[16px] font-[Roboto]">{userProgressCtx.activeMovie.plot}</p>
                         </div>
                         <div className="relative flex flex-col gap-2">
-                            {userProgressCtx.activeMovie.prediction == 0 ?
-                                <h2 className="text-[20px] font-medium font-[Roboto]">Rating:</h2>
-                            :
-                                <h2 className="text-[20px] font-medium font-[Roboto]">{`Predicted Rating: ${userProgressCtx.activeMovie.prediction.toFixed(2)}/5`}</h2>
-                            }
+                            <h2 className="text-[20px] font-medium font-[Roboto]">Rating:</h2>
                             <div className="flex gap-3">
                                 <div className="flex items-center gap-1">
                                     <input
