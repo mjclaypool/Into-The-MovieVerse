@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# Into the MovieVerse - Front-End Application
+ Movie recommendation system that provides users with movie recommendations based on their rating history and similar users' ratings found in a MovieLens dataset. This front-end application connects to a backend, hosted on pythonanywhere.com, that contains custom API scripts to handle posting new user ratings, getting new movie recommendations, and getting movie details from OMDb.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Built with](#built-with)
+  - [Live Link](#live-link)
+  - [Screenshots](#screenshot)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+### The challenge
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Users should be able to:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- View the optimal layout for the app depending on their device's screen size.
+- Rate movies within the dataset with values between 0.5 and 5 by:
+  - Scrolling through popular movies.
+  - Searching movies with search bar filtering.
+  - Browsing movies using a dropdown menu.
+- See personalized movie recommendations based on the user's rating history.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Built with
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Semantic HTML5 markup
+- Mobile-first workflow
+- TypeScript
+- [React](https://reactjs.org/) - JS library
+- [Tailwind CSS](https://tailwindcss.com/) - For styles
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Live Link
+- Live Site URL: [Into the MovieVerse](https://mjclaypool.github.io/Into-The-MovieVerse/)
+
+### Screenshots
+![](./public/movieverse-recommendations.png)
+
+![](./public/movieverse-modal.png)
+
+![](./public/movieverse-search.png)
+
+![](./public/movieverse-browse.png)
