@@ -33,11 +33,11 @@ export default function Search( props: searchProps ) {
     }
 
     return (
-        <div className="flex items-center gap-15 py-15">
-            <div className="w-1/2">
+        <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-15 py-6 md:py-15 mx-auto max-w-screen-xl px-4">
+            <div className="w-full md:w-1/2">
                 <TitleSection sectionTitle={props.title}/>
             </div>
-            <div className="flex flex-col gap-6 w-1/2">
+            <div className="w-full md:w-1/2 flex flex-col gap-6">
                 {props.title == "Search Movies" ?
                     <SearchBar onValidInput={handleValidInput} onInvalidInput={handleInvalidInput} />
                 :

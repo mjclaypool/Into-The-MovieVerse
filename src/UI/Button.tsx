@@ -13,8 +13,8 @@ export default function Button( props: btnProps ) {
         disabled: "bg-zinc-500"
     }
     const sizeVariants: variants = {
-        default: "py-3 px-16",
-        small: "px-3"
+        default: "py-3 px-8 md:px-16",
+        small: "py-1 px-4"
     }
     return (
         <button

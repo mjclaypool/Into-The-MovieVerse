@@ -4,6 +4,6 @@ type titleSectionProps = {
 
 export default function TitleSection( props: titleSectionProps ) {
     return (
-        <h2 className="text-zinc-200 text-[40px] font-bold font-[Roboto] w-full">{props.sectionTitle}</h2>
+        <h2 className="text-zinc-200 text-[28px] md:text-[40px] font-bold font-[Roboto] w-full">{props.sectionTitle}</h2>
     )
 }

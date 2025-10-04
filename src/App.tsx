@@ -13,7 +13,7 @@ import './index.css'
 function App() {
   return (
     <UserProgressContextProvider>
-      <div className='bg-zinc-800 size-full px-[170px] pt-20'>
+      <div className='bg-zinc-800 size-full px-[40px] md:px-[100px] pt-12 md:pt-20'>
         <Header />
         <Movies>
           <TitleSection sectionTitle='Recommended Movies' />

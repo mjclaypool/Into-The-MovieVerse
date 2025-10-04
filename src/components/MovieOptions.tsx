@@ -51,7 +51,7 @@ export default function MovieOptions( props: movieOptionsProps ) {
     return (
         <div className="flex space-x-6">
             {movieOptions.map(item => (
-                <div key={item.movie_name} onClick={() => handleClick(item)}>
+                <div key={item.movie_name} className="min-w-[220px] md:min-w-0" onClick={() => handleClick(item)}>
                     <MovieCard
                         date={item.movie_date}
                         title={item.movie_name}
